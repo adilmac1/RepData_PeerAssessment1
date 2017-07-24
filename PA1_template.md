@@ -27,10 +27,6 @@ totalSteps <- with(activityData, tapply(steps, date, sum, na.rm = TRUE))
 qplot(totalSteps)
 ```
 
-```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
-
 ![](figure/unnamed-chunk-2-1.png)<!-- -->
 
 ```r
@@ -131,7 +127,7 @@ summary(filledSteps)
 The mean of the total number of steps: 10766
 The median of the total number of steps: 10766
 
-The mean and median of imputed data is different compared with the original data. The mean and median of imputed data is the same.
+The mean and median of imputed data is different compared with the original data. The mean and median of imputed data is the same.The mean and median of the imputed data are larger than the original data.
 
 ##Are there dierences in activity patterns between weekdays and weekends?
 
